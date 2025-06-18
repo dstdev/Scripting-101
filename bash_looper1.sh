@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# bash_template1.sh
+# bash_looper1.sh
 # 21 May 2025 | datainscience.com 
 # 
 # This file is the bare minimum for a readable and maintainable shell script 
