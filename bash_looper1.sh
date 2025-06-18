@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# bash_looper1.sh
+# bash_looper1.sh - a really cool script
 # 21 May 2025 | datainscience.com 
 # 
 # This file is the bare minimum for a readable and maintainable shell script 
