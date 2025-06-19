@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # bash_looper1.sh - a really cool script
+# This an extra header line for issue #3
 # 21 May 2025 | datainscience.com 
 # 
 # This file is the bare minimum for a readable and maintainable shell script 
