@@ -4,6 +4,7 @@
 # This an extra header line for issue #3
 # 21 May 2025 | datainscience.com 
 # 
+# This is a test comment.
 # This file is the bare minimum for a readable and maintainable shell script 
 #  The key elements are:
 #     1) A usage/help function 
