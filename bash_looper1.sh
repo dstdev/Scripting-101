@@ -12,7 +12,7 @@
 
 # Usage output  
 function usage(){
-    echo "bash_template1.sh - basic bash script boilerplate"
+    echo "bash_looper1.sh - basic bash script boilerplate"
     echo "  Options: "
     echo "      -h : print this message"
     echo "      -l : 'live-run mode' - evaluate and run commands.  "
