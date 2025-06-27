@@ -11,6 +11,7 @@
 #         - I like the default to be non-live so I can review the commnads
 #     4) A command wrapper function with logger output 
 # Usage output  
+# Adding some commnets in the header 
 function usage(){
     echo "bash_tempalte.sh - basic bash script boilerplate"
     echo "  Options: "
