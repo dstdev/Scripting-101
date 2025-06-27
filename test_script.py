@@ -31,8 +31,8 @@ parser.add_argument("--arg2", type=str, help="String arg two", default="")
 
 # Can't use both --success and --fail so set up mutex group 
 group = parser.add_mutually_exclusive_group()
-group.add_argument('--success','-s', action='store_true', default=False)
-group.add_argument('--fail', '-f', action='store_true', default=False)
+group.add_argument('--success','-s', action='store_true', help='Return Code is 0', default=False)
+group.add_argument('--fail', '-f', action='store_true', help='Return Code is not 0', default=False)
 group.add_argument('--failpct','-p', type=int, help='failure percentage, 0-100', default=False)  
 
 args = parser.parse_args()

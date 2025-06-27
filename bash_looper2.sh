@@ -10,8 +10,6 @@
 #     3) Live/Dry-run flag 
 #         - I like the default to be non-live so I can review the commnads
 #     4) Check command for errors, print errors at the end
-# Another commnet. 
-# Yet Another commnet. 
 
 # Usage output  
 function usage(){
