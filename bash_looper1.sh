@@ -9,6 +9,7 @@
 #     2) Command line arguments - miniumon of "-h" for "help/usage"
 #     3) Live/Dry-run flag 
 #         - I like the default to be non-live so I can review the commnads
+# New comment for issue #23
 
 # Usage output  
 function usage(){
