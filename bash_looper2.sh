@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# bash_template1.sh
+# bash_looper2.sh
 # 21 May 2025 | cruhl@datainscience.com 
 # 
 # This file is the bare minimum for a readable and maintainable shell script 
@@ -10,6 +10,7 @@
 #     3) Live/Dry-run flag 
 #         - I like the default to be non-live so I can review the commnads
 #     4) Check command for errors, print errors at the end
+# Another commnet. 
 
 # Usage output  
 function usage(){
