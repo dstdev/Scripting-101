@@ -3,9 +3,6 @@
 # bash_looper1.sh - a really cool script
 # 21 May 2025 | datainscience.com 
 # 
-# Test commnet on cwr_dev branch.
-# This is a test comment.
-# This is another test comment on cwr_dev branch
 # This file is the bare minimum for a readable and maintainable shell script 
 #  The key elements are:
 #     1) A usage/help function 
@@ -15,7 +12,7 @@
 
 # Usage output  
 function usage(){
-    echo "bash_looper1.sh - basic bash script boilerplate"
+    echo "bash_template1.sh - basic bash script boilerplate"
     echo "  Options: "
     echo "      -h : print this message"
     echo "      -l : 'live-run mode' - evaluate and run commands.  "
