@@ -52,17 +52,19 @@ def do_cmd(cmd: str) -> tuple:
     # translates to - take the elements of the list cmd and joint them to a string 
     # separted by spaces 
     print(f"Running: {" ".join(cmd)}")
-    logger.info(f"start: {' '.join(cmd)}")
+    logger.info(f"cmd to run: {' '.join(cmd)}")
     # If we're in 'live mode' run the command 
     if args.live:
         proc = Popen(cmd, stdout=PIPE, stderr=PIPE, stdin=None)
         std_out, std_err = proc.communicate() 
         
         if proc.returncode != 0: # The command failed!
-            print(f"looper: std_err: {std_err.decode('utf-8')}")
-            logger.error(f"error!: {std_out}")
+            msg = f"looper: std_err: {std_err.decode('utf-8')}"
+            print(msg)
+            logger.error(msg)
         
-        print(f"looper: std_out: {std_out.decode('utf-8')}")
+        else: 
+            print(f"looper: std_out: {std_out.decode('utf-8')}")
         print(f"looper rc: {proc.returncode }")    
         logger.info(f"complete: {' '.join(cmd)}")
     return (std_out, std_err, proc.returncode) 
@@ -73,16 +75,17 @@ def main():
 
     # Python needs a "range()" function for 'for loops' 
     for c in range(0,args.count):
-        
+        print("++===============================++")
         # Build up the command arument list, the Popen command expects 
         # the command to be in the form of a list, with one arg per list
         # element 
-        cmd = [f"{cmd_base}", "--arg1", f"some_text_{c}", "--failpct", "30"]
+        cmd = [f"Scripting-101/{cmd_base}", "--arg1", f"some_text_{c}", "--failpct", "30"]
         do_cmd(cmd)
+        print("--===============================--\n")
 
 if __name__ == "__main__":
     logger.info("starting.")
     main() 
-    logger.info("starting.")
+    logger.info("ended.")
 
 

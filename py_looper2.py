@@ -38,7 +38,7 @@ cmd_base = "./test_script.py"
 
 # Python needs a "range()" function for 'for loops' 
 for c in range(0,args.count):
-  
+  print("++===============================++")
   # Build up the command arument list, the Popen command expects 
   # the command to be in the form of a list, with one arg per list
   # element 
@@ -57,4 +57,4 @@ for c in range(0,args.count):
     
     print(f"looper: std_out: {std_out.decode('utf-8')}")
     print(f"looper rc: {proc.returncode }")
-
+  print("--===============================--\n")

@@ -40,9 +40,11 @@ cmd_base = "./test_script.py"
 for c in range(0,args.count):
   
   # Build up the command string 
+  print("++===============================++")
   cmd=f"{cmd_base} --arg1 some_text_{c} --failpct 30"
   # Always print the ccommand that will be run 
   print(f"Running: {cmd}")
   # If we're in 'live mode' run the command 
   if args.live:
     os.system(cmd)
+  print("--===============================--\n")

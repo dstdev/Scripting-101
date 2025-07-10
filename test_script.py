@@ -55,9 +55,9 @@ def main():
     if not failed: 
         # success!
         rc = 0
-        out_str  = f"test_script - success!\n"
-        out_str += f"test_script - {arg_line}"
-        out_str += f"test_script - rc: {rc}"
+        out_str  = f"test_script:  success!\n"
+        out_str += f"test_script:  {arg_line}"
+        out_str += f"test_script:  rc: {rc}"
         print(out_str)
 
     
