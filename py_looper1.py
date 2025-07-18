@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 # python_template1.sh
 # 27 May 2025 | datainscience.com 

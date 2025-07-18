@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 # python_template1.sh
 # 27 May 2025 | datainscience.com 
@@ -19,7 +19,7 @@ from subprocess import Popen, PIPE
 
 import logging 
 logging.basicConfig(
-    filename=f"looper.log",  # Specify the log file name
+    filename=f"py_looper3.log",  # Specify the log file name
     level=logging.INFO,  # Set the logging level (e.g., DEBUG, INFO, WARNING, ERROR, CRITICAL)
     filemode='a', # 'a' for append, 'w' for overwrite
     format='%(asctime)s - %(levelname)s - %(message)s',  # Define the log message format
