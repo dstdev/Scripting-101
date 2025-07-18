@@ -35,6 +35,10 @@ group.add_argument('--success','-s', action='store_true', help='Return Code is 0
 group.add_argument('--fail', '-f', action='store_true', help='Return Code is not 0', default=False)
 group.add_argument('--failpct','-p', type=int, help='failure percentage, 0-100', default=False)  
 
+if len(sys.argv) == 1:
+    # If no arguments, add '--help' to sys.argv to trigger help display
+    sys.argv.append('--help')
+
 args = parser.parse_args()
 
 def main():
