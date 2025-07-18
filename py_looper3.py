@@ -79,7 +79,7 @@ def main():
         # Build up the command arument list, the Popen command expects 
         # the command to be in the form of a list, with one arg per list
         # element 
-        cmd = [f"Scripting-101/{cmd_base}", "--arg1", f"some_text_{c}", "--failpct", "30"]
+        cmd = [f"{cmd_base}", "--arg1", f"some_text_{c}", "--failpct", "30"]
         do_cmd(cmd)
         print("--===============================--\n")
 

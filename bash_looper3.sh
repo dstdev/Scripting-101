@@ -60,7 +60,7 @@ debug_mode=0
 quiet_mode=0
 live_mode=0 
 count=0 
-log_file="bash_template3.log"
+log_file="bash_looper3.log"
 
 # Loop over input options 
 # getopts "hlc:" means:
@@ -78,11 +78,11 @@ while getopts "qdhlc:" arg; do
       live_mode=1
       ;;
     q)
-      # Found a -d, use quiet mode"
+      # Found a -q, use quiet mode"
       quiet_mode=1
       ;;    
     d)
-      # Found a -q, use debug mode"
+      # Found a -d, use debug mode"
       debug_mode=1
       ;;            
     c)
